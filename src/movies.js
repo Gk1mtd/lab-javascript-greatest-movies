@@ -46,6 +46,7 @@ function directorsAvgScore(movies) {
     accu.push(movie.director);
     return accu;
   }, []);
+
   // have an Array with unique Directors
   const uniqueDirectors = [...new Set(allDirectors)]
   // gives back all Movies of Director
@@ -58,6 +59,7 @@ function directorsAvgScore(movies) {
       return totalScore
     }, 0)/movies.length
   }
+  
   // goes through all unique directors, adds the director as key to the result object,
   // adds the average of directors movies as value to this key
   let result = {}
