@@ -59,7 +59,7 @@ function directorsAvgScore(movies) {
     }, 0)/movies.length
   }
   // goes through all unique directors, adds the director as key to the result object,
-  // adds the average of his movies as value to this key
+  // adds the average of directors movies as value to this key
   let result = {}
   for (element of uniqueDirectors) {
     result[element] = avgOfMovies(moviesFromDirector(element))
