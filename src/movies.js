@@ -1,3 +1,62 @@
+
+// 1 Exercise: Make a shallow copy of the movie database
+const movies = require('../src/data');
+function copyDatabase (movies){
+  const movieCopy = [...movies]
+  return movieCopy
+}
+//console.log(copyDatabase(movies))
+console.log("######################")
+
+// 2: return every title of the movie database
+
+function everyTitle(movies) {
+  return movies.map(movie => movie.title)
+}
+
+//console.log(everyTitle(movies))
+
+// 3: sort every Title
+
+function sortEveryTitle(movies) {
+  return everyTitle(movies).sort()
+}
+
+//console.log(sortEveryTitle(movies))
+
+// 4: return all Movie Titles in lowercase, 
+// dont change original Database
+
+function everyTitleLowercase(movies) {
+  return movies.map(movie => movie.title.toLowerCase())
+}
+
+//console.log(everyTitleLowercase(movies))
+console.log("######################")
+//console.log(movies)
+
+// 5: Create an Array with directors 
+// and the average of his/her score - use reduce!
+// dont change the old database
+
+function directorsAvgScore (movies) {
+  const directorsCopy = [...movies]
+
+// make an array of uniqueDirectors
+// put new directors into uniqueArray
+// reduce movies: accumulator initial is an empty array []
+  // if director of object is not in uniquearray, 
+
+  // 1 copy of array
+  // 2 filter all directors
+  // 3 reduce their score to an averagy
+  // 4 create an new Object
+}
+
+console.log("######################")
+
+
+
 // Iteration 1: All directors? - Get the array of all directors.
 // _Bonus_: It seems some of the directors had directed multiple movies so they will pop up multiple times in the array of directors.
 // How could you "clean" a bit this array and make it unified (without duplicates)?
